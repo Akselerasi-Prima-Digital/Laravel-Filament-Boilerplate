@@ -28,13 +28,14 @@ class UserResource extends Resource
     protected static ?string $navigationLabel = 'Users';
 
     protected static ?string $modelLabel = 'Users';
+
     protected static ?string $recordTitleAttribute = 'name';
 
     public static function getNavigationBadge(): ?string
     {
         return static::getModel()::whereDoesntHave('roles', function ($q) {
             $q->where('name', 'Super Admin');
-        })->count();    
+        })->count();
     }
 
     public static function form(Schema $schema): Schema

@@ -25,7 +25,7 @@ class UsersTable
             })
             ->columns([
                 TextColumn::make('name')
-                    
+
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('email')
