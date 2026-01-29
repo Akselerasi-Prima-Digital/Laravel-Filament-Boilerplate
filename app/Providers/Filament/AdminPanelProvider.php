@@ -37,11 +37,23 @@ class AdminPanelProvider extends PanelProvider
             // ->darkModeBrandLogo(asset('logo.svg'))
             ->favicon(asset('favicon.ico'))
             ->colors([
-                'primary' => Color::Indigo,
-                'gray' => Color::Slate,
+                'primary' =>  [
+                    50 => 'oklch(0.985 0 0)',
+                    100 => 'oklch(0.967 0.001 286)',
+                    200 => 'oklch(0.92 0.004 286)',
+                    300 => 'oklch(0.871 0.006 286)',
+                    400 => 'oklch(0.705 0.015 286)',
+                    500 => 'oklch(0.274 0.006 286)',
+                    600 => 'oklch(0.141 0.005 286)',
+                    700 => 'oklch(0.21 0.006 286)',
+                    800 => 'oklch(0.274 0.006 286)',
+                    900 => 'oklch(0.21 0.006 286)',
+                    950 => 'oklch(0.141 0.005 286)',
+                ],
+                'gray' => Color::Zinc,
                 'danger' => Color::Rose,
-                'info' => Color::Sky,
-                'success' => Color::Emerald,
+                'info' => Color::Blue,
+                'success' => Color::Green,
                 'warning' => Color::Amber,
             ])
             ->font('DM Sans')

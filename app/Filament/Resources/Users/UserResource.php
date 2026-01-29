@@ -32,7 +32,9 @@ class UserResource extends Resource
 
     public static function getNavigationBadge(): ?string
     {
-        return static::getModel()::count();
+        return static::getModel()::whereDoesntHave('roles', function ($q) {
+            $q->where('name', 'Super Admin');
+        })->count();    
     }
 
     public static function form(Schema $schema): Schema
