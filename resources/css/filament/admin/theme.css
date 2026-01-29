@@ -72,6 +72,16 @@
         color: var(--gray-500) !important;
     }
 
+    .fi-sidebar-item {
+        &.fi-active {
+            & > .fi-sidebar-item-btn {
+                & > .fi-sidebar-item-label {
+                    color: var(--primary-700) !important;
+                }
+            }
+        }
+    }
+
     /* === DARK MODE === */
 
     /* ON state: use darker background for better visibility */
@@ -109,8 +119,8 @@
     }
 
     .dark .fi-sidebar-item-label:not(:disabled):hover {
-    color: #ffffff !important;
-}
+        color: #ffffff !important;
+    }
 
     .dark .fi-sidebar-item {
         &.fi-active {
