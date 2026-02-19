@@ -85,7 +85,7 @@ A modern boilerplate for building web applications with **Laravel** and **Filame
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/reynaldiarya/Laravel-Filament-Boilerplate.git
+git clone https://github.com/Akselerasi-Prima-Digital/Laravel-Filament-Boilerplate.git
 cd Laravel-Filament-Boilerplate
 ```
 
@@ -198,5 +198,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/reynaldiarya">reynaldiarya</a>
+  Made with ❤️ by <a href="https://github.com/Akselerasi-Prima-Digital">Akselerasi Prima Digital</a>
 </p>
