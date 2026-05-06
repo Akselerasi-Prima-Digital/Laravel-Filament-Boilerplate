@@ -1,202 +1,192 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
-</p>
-
-<p align="center">
-  <a href="https://github.com/laravel/framework/actions"><img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel Version"></a>
-  <a href="https://filamentphp.com/"><img src="https://img.shields.io/badge/Filament-5.x-FFAA00?style=for-the-badge&logo=laravel&logoColor=white" alt="Filament Version"></a>
-  <a href="https://php.net"><img src="https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP Version"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License"></a>
-</p>
-
 # Laravel Filament Boilerplate
 
-A modern boilerplate for building web applications with **Laravel** and **Filament Admin Panel**. Comes with authentication system, user management, and role-based access control (RBAC) out of the box.
-
-## ✨ Key Features
-
-### 🔐 Authentication & Security
-
-- Email & password login
-- Forgot password with email reset link
-- Email verification for new users
-- Session management
-
-### 👥 User Management
-
-- Intuitive CRUD interface for users
-- Assign roles to users
-- Direct permissions for users without roles
-- Profile management
-
-### 🛡️ Role & Permission (RBAC)
-
-- Granular role management with permissions
-- Role-based access control using [Filament Shield](https://github.com/bezhanSalleh/filament-shield)
-- Guard support for multi-auth
-- Super admin bypass for full access
-
-### 🎨 Admin Panel
-
-- Modern dashboard with [Filament 5.x](https://filamentphp.com/)
-- Dark/Light mode
-- Responsive design for mobile & desktop
-- Ready-to-use widgets & charts
-
-## 🛠️ Tech Stack
-
-| Technology      | Version |
-| --------------- | ------- |
-| PHP             | ^8.2    |
-| Laravel         | ^12.0   |
-| Filament        | 5.0     |
-| Filament Shield | ^4.1    |
-| TailwindCSS     | 4.x     |
-
-## 📦 Packages
-
-### Production Dependencies
-
-| Package                                                                         | Version | Description                               |
-| ------------------------------------------------------------------------------- | ------- | ----------------------------------------- |
-| [laravel/framework](https://laravel.com/)                                       | ^12.0   | The PHP Framework for Web Artisans        |
-| [filament/filament](https://filamentphp.com/)                                   | 5.0     | Elegant TALL stack admin panel            |
-| [bezhansalleh/filament-shield](https://github.com/bezhanSalleh/filament-shield) | ^4.1    | Role & Permission management for Filament |
-| [laravel/tinker](https://github.com/laravel/tinker)                             | ^2.10.1 | REPL for Laravel                          |
-
-### Development Dependencies
-
-| Package                                         | Version | Description                    |
-| ----------------------------------------------- | ------- | ------------------------------ |
-| [pestphp/pest](https://pestphp.com/)            | ^4.3    | Testing framework              |
-| [laravel/pint](https://laravel.com/docs/pint)   | ^1.24   | Code style fixer               |
-| [laravel/sail](https://laravel.com/docs/sail)   | ^1.41   | Docker development environment |
-| [laravel/pail](https://github.com/laravel/pail) | ^1.2.2  | Real-time log viewer           |
-
-## 📋 Requirements
-
-- PHP >= 8.2
-- Composer
-- Node.js & NPM
-- MySQL / PostgreSQL / SQLite
-
-## 🚀 Installation
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/Akselerasi-Prima-Digital/Laravel-Filament-Boilerplate.git
-cd Laravel-Filament-Boilerplate
-```
-
-### 2. Install Dependencies
-
-```bash
-composer install
-npm install
-```
-
-### 3. Environment Setup
-
-```bash
-cp .env.example .env
-php artisan key:generate
-```
-
-### 4. Database Configuration
-
-Edit the `.env` file and configure your database settings:
-
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=your_database
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
-```
-
-### 5. Migration & Seeder
-
-```bash
-php artisan migrate --seed
-```
-
-### 6. Build Assets
-
-```bash
-npm run build
-```
-
-### 7. Run Server
-
-```bash
-php artisan serve
-```
-
-Or use the provided composer script:
-
-```bash
-composer dev
-```
-
-Access the application at: `http://localhost:8000/admin`
-
-## 🔑 Default Credentials
-
-| Email                | Password  | Role        |
-| -------------------- | --------- | ----------- |
-| superadmin@gmail.com | admin1234 | Super Admin |
-
-> ⚠️ **Important:** Change the default password immediately after your first login!
-
-## 📁 Folder Structure
-
-```
-├── app/
-│   ├── Filament/           # Filament resources & pages
-│   ├── Models/             # Eloquent models
-│   ├── Policies/           # Authorization policies
-│   └── Providers/          # Service providers
-├── database/
-│   ├── migrations/         # Database migrations
-│   └── seeders/            # Database seeders
-├── resources/
-│   └── views/              # Blade views
-└── routes/
-    └── web.php             # Web routes
-```
-
-## 🧪 Testing
-
-Run tests with Pest:
-
-```bash
-composer test
-```
-
-## 🤝 Contributing
-
-Contributions are welcome! Please fork this repository and create a pull request for any improvements or bug fixes.
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## 🙏 Credits
-
-- [Laravel](https://laravel.com/) - The PHP Framework for Web Artisans
-- [Filament](https://filamentphp.com/) - The elegant TALL stack admin panel
-- [Filament Shield](https://github.com/bezhanSalleh/filament-shield) - Role & Permission management
-
----
+Pre-configured Laravel 12 starter kit with Filament v5 admin panel, role-based access control, and modern developer tooling.
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/Akselerasi-Prima-Digital">Akselerasi Prima Digital</a>
+  <img src="https://img.shields.io/badge/version-1.0-blue" />
+  <img src="https://img.shields.io/badge/PHP-8.2-777BB4" />
+  <img src="https://img.shields.io/badge/Laravel-12-red" />
+  <a href="LICENSE">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-yellow" target="_blank" />
+  </a>
 </p>
+
+## Compatibility
+- PHP >= 8.2
+- Laravel 12.x
+- Node.js >= 18
+- npm >= 9
+
+## Description
+Eliminates repetitive initial configuration for Laravel-based projects by providing a pre-integrated stack with enterprise-grade admin panel, access control, testing framework, and frontend tooling. Targeted at Laravel developers who need to skip boilerplate setup and start building business logic immediately.
+
+## Features
+- Laravel 12 framework with PHP 8.2+ support
+- Filament v5 admin panel with pre-configured base resources
+- Spatie Laravel Permission for granular role-based access control (RBAC)
+- Filament Shield for automatic synchronization of admin panel permissions
+- Pest PHP testing framework with pre-configured test suite and examples
+- Tailwind CSS v4 for utility-first, responsive styling
+- Vite for fast frontend asset compilation and hot module replacement (HMR)
+- Pre-built User, Role, and Permission models with factories and seeders
+- Streamlined Laravel 12 directory structure (deprecated Kernel.php removed)
+- Artisan command auto-discovery for custom console commands
+
+## Tech Stack
+### Backend
+- PHP 8.2
+- Laravel 12
+- Filament v5
+- Livewire v4
+- Spatie Laravel Permission
+- Filament Shield
+
+### Testing
+- Pest v4
+- PHPUnit v12
+
+### Frontend
+- Tailwind CSS v4
+- Vite
+- Alpine.js
+
+### Tooling
+- Composer
+- Node.js
+- npm
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Akselerasi-Prima-Digital/Laravel-Filament-Boilerplate.git
+   cd Laravel-Filament-Boilerplate
+   ```
+
+2. Install PHP dependencies:
+   ```bash
+   composer install
+   ```
+
+3. Install Node.js dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Copy environment configuration:
+   ```bash
+   cp .env.example .env
+   ```
+
+5. Generate application encryption key:
+   ```bash
+   php artisan key:generate
+   ```
+
+6. Configure database connection in `.env`:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=laravel_filament_boilerplate
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+
+7. Run database migrations and seeders:
+   ```bash
+   php artisan migrate --seed
+   ```
+
+8. Compile frontend assets for production:
+   ```bash
+   npm run build
+   ```
+   For development with HMR:
+   ```bash
+   npm run dev
+   ```
+
+9. Start the development server:
+   ```bash
+   php artisan serve
+   ```
+
+## Configuration
+### Environment Variables
+Key variables to configure in `.env`:
+- `APP_NAME`: Application display name (default: `Laravel`)
+- `APP_URL`: Base application URL (default: `http://localhost`)
+
+### Package Configuration
+- Spatie Permission: permission.php
+- Filament Shield: filament-shield.php
+- Filament Panel: filament.php
+
+## Usage
+### Admin Panel Access
+After completing installation and seeding, access the Filament admin panel at:
+```
+http://localhost:8000/admin
+```
+Default admin credentials are defined in UserSeeder.php.
+
+### Permission Management
+Sync Filament admin permissions with Spatie Permission using Filament Shield:
+```bash
+php artisan shield:generate
+```
+Manage roles and permissions via the Filament admin panel at `/admin/shield/roles`.
+
+### Running Tests
+Execute the full test suite:
+```bash
+php artisan test
+```
+
+## Project Structure
+```
+app/
+  Filament/       # Filament admin panel resources, pages, and widgets
+  Http/           # Controllers and middleware
+  Models/         # Eloquent models (User, Role, Permission)
+  Policies/       # Model policies (RolePolicy)
+  Providers/      # Service providers
+bootstrap/        # Laravel 12 bootstrap files (app.php, providers.php)
+config/           # All package and application configuration
+database/         # Migrations, factories, seeders
+public/           # Public assets and entry points
+resources/        # Frontend assets (CSS, JS) and Blade views
+routes/           # Web and console routes
+tests/            # Pest PHP test suite (Feature, Unit)
+```
+
+## Scripts
+### Node.js Scripts (package.json)
+- `npm run dev`: Start Vite development server with HMR
+- `npm run build`: Compile and minify frontend assets for production
+
+### Artisan Commands
+- `php artisan serve`: Start Laravel development server
+- `php artisan migrate`: Run pending database migrations
+- `php artisan shield:generate`: Sync Filament permissions
+- `php artisan test`: Run Pest PHP test suite
+- `php artisan make:filament-resource`: Generate new Filament resource
+
+## Contributing
+Contributions are welcome. Follow these steps:
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Commit changes: `git commit -m "Add: your feature description"`
+4. Push to branch: `git push origin feature/your-feature`
+5. Open a pull request
+
+Ensure all tests pass before submitting:
+```bash
+php artisan test
+```
+
+## License
+Distributed under the MIT License. See LICENSE for full text.
+
+## Author
+Akselerasi Prima Digital
