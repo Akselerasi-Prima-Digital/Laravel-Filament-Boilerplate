@@ -11,12 +11,6 @@ Pre-configured Laravel 12 starter kit with Filament v5 admin panel, role-based a
   </a>
 </p>
 
-## Compatibility
-- PHP >= 8.2
-- Laravel 12.x
-- Node.js >= 18
-- npm >= 9
-
 ## Description
 Eliminates repetitive initial configuration for Laravel-based projects by providing a pre-integrated stack with enterprise-grade admin panel, access control, testing framework, and frontend tooling. Targeted at Laravel developers who need to skip boilerplate setup and start building business logic immediately.
 
@@ -33,29 +27,23 @@ Eliminates repetitive initial configuration for Laravel-based projects by provid
 - Artisan command auto-discovery for custom console commands
 
 ## Tech Stack
-### Backend
-- PHP 8.2
-- Laravel 12
-- Filament v5
-- Livewire v4
-- Spatie Laravel Permission
-- Filament Shield
 
-### Testing
-- Pest v4
-- PHPUnit v12
-
-### Frontend
-- Tailwind CSS v4
-- Vite
-- Alpine.js
-
-### Tooling
-- Composer
-- Node.js
-- npm
+- **Backend**: Laravel 12, PHP 8.2
+- **Admin Panel**: Filament v5 (with Filament Shield & Spatie Permission)
+- **Frontend**: Tailwind CSS v4, Livewire v4, Alpine.js, Vite
+- **Testing**: Pest PHP 4
+- **Development Tools**: Laravel Sail, Laravel Pint, Laravel Pail
 
 ## Installation
+
+### Prerequisites
+- PHP 8.2 or higher
+- Composer
+- MariaDB or MySQL
+- Node.js and npm
+
+### Steps
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/Akselerasi-Prima-Digital/Laravel-Filament-Boilerplate.git
