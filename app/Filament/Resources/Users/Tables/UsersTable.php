@@ -18,11 +18,9 @@ class UsersTable
     public static function configure(Table $table): Table
     {
         return $table
-            ->modifyQueryUsing(function (Builder $query) {
-                return $query->whereDoesntHave('roles', function (Builder $q) {
-                    $q->where('name', 'Super Admin');
-                });
-            })
+            ->modifyQueryUsing(fn (Builder $query) => $query->whereDoesntHave('roles', function (Builder $q) {
+                $q->where('name', 'Super Admin');
+            }))
             ->columns([
                 TextColumn::make('name')
 

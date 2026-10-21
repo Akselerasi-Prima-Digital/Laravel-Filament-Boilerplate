@@ -1,11 +1,11 @@
 # Laravel Filament Boilerplate
 
-Pre-configured Laravel 12 starter kit with Filament v5 admin panel, role-based access control, and modern developer tooling.
+Pre-configured Laravel 13 starter kit with Filament v5 admin panel, role-based access control, and modern developer tooling.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0-blue" />
-  <img src="https://img.shields.io/badge/PHP-8.2-777BB4" />
-  <img src="https://img.shields.io/badge/Laravel-12-red" />
+  <img src="https://img.shields.io/badge/version-1.1.0-blue" />
+  <img src="https://img.shields.io/badge/PHP-8.3-777BB4" />
+  <img src="https://img.shields.io/badge/Laravel-13-red" />
   <a href="LICENSE">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-yellow" target="_blank" />
   </a>
@@ -15,7 +15,7 @@ Pre-configured Laravel 12 starter kit with Filament v5 admin panel, role-based a
 Eliminates repetitive initial configuration for Laravel-based projects by providing a pre-integrated stack with enterprise-grade admin panel, access control, testing framework, and frontend tooling. Targeted at Laravel developers who need to skip boilerplate setup and start building business logic immediately.
 
 ## Features
-- Laravel 12 framework with PHP 8.2+ support
+- Laravel 13 framework with PHP 8.3+ support
 - Filament v5 admin panel with pre-configured base resources
 - Spatie Laravel Permission for granular role-based access control (RBAC)
 - Filament Shield for automatic synchronization of admin panel permissions
@@ -23,12 +23,12 @@ Eliminates repetitive initial configuration for Laravel-based projects by provid
 - Tailwind CSS v4 for utility-first, responsive styling
 - Vite for fast frontend asset compilation and hot module replacement (HMR)
 - Pre-built User, Role, and Permission models with factories and seeders
-- Streamlined Laravel 12 directory structure (deprecated Kernel.php removed)
+- Streamlined Laravel 13 directory structure (deprecated Kernel.php removed)
 - Artisan command auto-discovery for custom console commands
 
 ## Tech Stack
 
-- **Backend**: Laravel 12, PHP 8.2
+- **Backend**: Laravel 13, PHP 8.3
 - **Admin Panel**: Filament v5 (with Filament Shield & Spatie Permission)
 - **Frontend**: Tailwind CSS v4, Livewire v4, Alpine.js, Vite
 - **Testing**: Pest PHP 4
@@ -37,7 +37,7 @@ Eliminates repetitive initial configuration for Laravel-based projects by provid
 ## Installation
 
 ### Prerequisites
-- PHP 8.2 or higher
+- PHP 8.3 or higher
 - Composer
 - MariaDB or MySQL
 - Node.js and npm
@@ -139,7 +139,7 @@ app/
   Models/         # Eloquent models (User, Role, Permission)
   Policies/       # Model policies (RolePolicy)
   Providers/      # Service providers
-bootstrap/        # Laravel 12 bootstrap files (app.php, providers.php)
+bootstrap/        # Laravel 13 bootstrap files (app.php, providers.php)
 config/           # All package and application configuration
 database/         # Migrations, factories, seeders
 public/           # Public assets and entry points
