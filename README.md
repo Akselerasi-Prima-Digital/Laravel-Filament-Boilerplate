@@ -31,7 +31,7 @@ Eliminates repetitive initial configuration for Laravel-based projects by provid
 - **Backend**: Laravel 13, PHP 8.3
 - **Admin Panel**: Filament v5 (with Filament Shield & Spatie Permission)
 - **Frontend**: Tailwind CSS v4, Livewire v4, Alpine.js, Vite
-- **Testing**: Pest PHP 4
+- **Testing**: Pest PHP 5
 - **Development Tools**: Laravel Sail, Laravel Pint, Laravel Pail
 
 ## Installation
