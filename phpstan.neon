@@ -10,7 +10,6 @@ parameters:
         - bootstrap/providers.php
         - config/
         - database/
-        - lang/
         - resources/
         - routes/
     excludePaths:
